@@ -1,0 +1,159 @@
+/*
+  Color Variables
+  ---------------
+*/
+$color-primary: #ff1a71;
+$color-secondary: #ff6300;
+$color-tertiary: #b806cc;
+$font-secondary: #eeeeee;
+$color-base: #eeeeee;
+$color-tertiary-dark: #45024c;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-grey-dark: #a3a3a3;
+$color-grey: #ededed;
+$color-grey-two: #bcbcbc;
+$color-grey-three: #949494;
+$color-grey-four: #8d8d8d;
+$color-grey-five: #9a9a9a;
+$color-grey-six: #838383;
+$color-grey-seven: #cccccc;
+$color-grey-eight: #aaaaaa;
+$color-grey-nine: #888888;
+$color-grey-ten: #d8d8d8;
+$color-grey-eleven: #f9f9f9;
+$color-grey-twelve: #9e9e9e;
+$color-grey-thirteen: #a7a7a7;
+$color-grey-fourteen: #c4c4c4;
+$color-grey-fifteen: #d0d0d0;
+$color-grey-sixteen: #ffeaf2;
+/*
+  Font Variables
+  --------------
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+$font-primary: 'Poppins', sans-serif;
+
+/* 
+  Mixins 
+  ------
+*/
+
+/*
+  Mobile Responsiveness
+  ---------------------
+*/
+
+/*
+  Main
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: $color-black;
+}
+
+a:link,
+a:visited a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+input:link,
+input:hover,
+input:focus,
+input:active {
+  outline: none;
+  // background-color: $color-white;
+}
+
+input::-webkit-input-placeholder {
+  font-family: $font-primary;
+}
+
+input::-moz-placeholder {
+  font-family: $font-primary;
+}
+
+input:-ms-input-placeholder {
+  font-family: $font-primary;
+}
+
+input::-ms-input-placeholder {
+  font-family: $font-primary;
+}
+
+input::placeholder {
+  font-family: $font-primary;
+}
+
+textarea::-webkit-input-placeholder {
+  font-family: $font-primary;
+  font-size: 1.6rem;
+}
+
+textarea::-moz-placeholder {
+  font-family: $font-primary;
+  font-size: 1.6rem;
+}
+
+textarea:-ms-input-placeholder {
+  font-family: $font-primary;
+  font-size: 1.6rem;
+}
+
+textarea::-ms-input-placeholder {
+  font-family: $font-primary;
+  font-size: 1.6rem;
+}
+
+textarea::placeholder {
+  font-family: $font-primary;
+  font-size: 1.6rem;
+}
+
+button:link,
+button:hover,
+button:focus,
+button:active {
+  outline: none;
+  background-color: $color-secondary;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //10px/16px = 62.5% 1rem
+  @media all and (max-width: 480px) {
+    font-size: 48%;
+  }
+
+  @media all and (min-width: 480px) and (max-width: 576px) {
+    font-size: 52%;
+  }
+
+  @media all and (min-width: 1024px) and (max-width: 1440px) {
+    font-size: 45%;
+  }
+
+  @media all and (min-width: 1440px) and (max-width: 1600px) {
+    font-size: 55%;
+  }
+
+  @media (min-width: 1920px) {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  line-height: 1.6;
+}
