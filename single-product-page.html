@@ -1,0 +1,158 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/jpg" href="./images/favicon.png" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Milky Express Shop </title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="container container-navbar">
+    <!-- Navigation -->
+    <div class="navbar">
+      <div class="navbar__mobile">
+        <!-- Navbar Logo -->
+        <div class="navbar__mobile__logo">
+          <a class="navbar__mobile__logo__link" href="index.html" title="navbar">
+            <img class="navbar__mobile__logo__link__img" src="images/logo.png" alt="">
+          </a>
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar__nav">
+        <ul class="navbar__nav__list">
+          <li class="navbar__nav__list__item remove">
+            <a class="navbar__nav__list__item__link active" href="index.html">
+              GO HOME
+            </a>
+          </li>
+          <div class="navbar__nav__list__group">
+            <img src="images/cart-icon.png" alt="" class="navbar__nav__group__list__item__icon">
+            <li class="navbar__nav__list__item">
+              <a class="navbar__nav__list__item__link" href="about.html">
+                <strong>Cart</strong>
+              </a>
+              <p class="paragraph"><span>3&nbsp</span>Items</p>
+          </div>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div class="product">
+      <div class="product__page">
+        <div class="product__page__left">
+          <div class="product__page__left__bg">
+            <img class="product__page__left__bg__img" src="images/single-product.png" alt="">
+          </div>
+          <div class="product__page__left__others">
+            <div class="product__page__left__others__item">
+              <div class="product__page__left__others__item__bg">
+                <img src="images/other-products.png" alt="">
+              </div>
+            </div>
+            <div class="product__page__left__others__item">
+              <div class="product__page__left__others__item__bg">
+                <img src="images/other-products.png" alt="">
+              </div>
+            </div>
+            <div class="product__page__left__others__item">
+              <div class="product__page__left__others__item__bg">
+                <img src="images/other-products.png" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="product__page__right">
+          <h2 class="heading-2">Milky Lactation Cookies</h2>
+          <h3 class="heading-3">4,500 NGN</h3>
+          <p class="paragraph">
+            Imagine being a mother who works every morning and still having to take care of the baby. Our lactation cookies are specially made for you. Available in 2 flavors, you can have more than one kind of cookie because it’s so yummy. You might eat it too fast because it tastes so good
+          </p>
+          <button class="btn">Chose a flavour ></button>
+          <div class="product__page__right__group">
+            <button class="btn">Add to cart</button>
+            <form class="product__page__right__group__counter">
+              <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+              <input class="input" type="number" id="number" value="0">
+              <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+            </form>
+            <script>
+              function increaseValue() {
+                var value = parseInt(document.getElementById('number').value, 10);
+                value = isNaN(value) ? 0 : value;
+                value++;
+                document.getElementById('number').value = value;
+              }
+
+              function decreaseValue() {
+                var value = parseInt(document.getElementById('number').value, 10);
+                value = isNaN(value) ? 0 : value;
+                value < 1 ? value = 1 : '';
+                value--;
+                document.getElementById('number').value = value;
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container container-shelf">
+    <div class="shelf">
+
+      <h2 class="heading-2">Related Products</h2>
+      <div class="shelf__row">
+        <div class="shelf__row__item">
+          <img src="images/milky-lactation-cookies.png" alt="" class="shelf__row__item__img">
+          <p class="paragraph shelf__row__item__title">Milky Lactation Cookies</p>
+          <h6 class="heading-6 shelf__row__item__text">Lactation cookies to improve
+            production of breastmilk</h6>
+          <div class="shelf__row__item__group">
+            <p class="paragraph">3,000 NGN</p>
+            <button class="btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="shelf__row__item">
+          <img src="images/breast-milk-bag.png" alt="" class="shelf__row__item__img">
+          <p class="paragraph shelf__row__item__title">Milky Lactation Cookies</p>
+          <h6 class="heading-6 shelf__row__item__text">Lactation cookies to improve
+            production of breastmilk</h6>
+          <div class="shelf__row__item__group">
+            <p class="paragraph">3,000 NGN</p>
+            <button class="btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="shelf__row__item">
+          <img src="images/milky-enrich-shakes.png" alt="" class="shelf__row__item__img">
+          <p class="paragraph shelf__row__item__title">Milky Lactation Cookies</p>
+          <h6 class="heading-6 shelf__row__item__text">Lactation cookies to improve
+            production of breastmilk</h6>
+          <div class="shelf__row__item__group">
+            <p class="paragraph">3,000 NGN</p>
+            <button class="btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="shelf__row__item">
+          <img src="images/milky-lacation-tea.png" alt="" class="shelf__row__item__img">
+          <p class="paragraph shelf__row__item__title">Milky Lactation Cookies</p>
+          <h6 class="heading-6 shelf__row__item__text">Lactation cookies to improve
+            production of breastmilk</h6>
+          <div class="shelf__row__item__group">
+            <p class="paragraph">3,000 NGN</p>
+            <button class="btn">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</html>

@@ -1,0 +1,203 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/jpg" href="./images/favicon.png" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Milky Express Shop </title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="container container-navbar">
+    <!-- Navigation -->
+    <div class="navbar">
+      <div class="navbar__mobile">
+        <!-- Navbar Logo -->
+        <div class="navbar__mobile__logo">
+          <a class="navbar__mobile__logo__link" href="index.html" title="navbar">
+            <img class="navbar__mobile__logo__link__img" src="images/logo.png" alt="">
+          </a>
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar__nav">
+        <ul class="navbar__nav__list">
+          <li class="navbar__nav__list__item remove">
+            <a class="navbar__nav__list__item__link active" href="index.html">
+              GO HOME
+            </a>
+          </li>
+          <div class="navbar__nav__list__group">
+            <img src="images/cart-icon.png" alt="" class="navbar__nav__group__list__item__icon">
+            <li class="navbar__nav__list__item">
+              <a class="navbar__nav__list__item__link" href="about.html">
+                <strong>Cart</strong>
+              </a>
+              <p class="paragraph"><span>3&nbsp</span>Items</p>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="cart">
+      <div class="cart__top">
+        <p class="paragraph">
+          < &nbsp;&nbsp; Continue Shopping </p>
+            <!-- <hr class="separator"> -->
+      </div>
+      <div class="cart__row">
+
+        <div class="cart__row__left">
+          <h3 class="heading-3">Cart</h3>
+          <p class="paragraph">You have three items in your cart</p>
+          <div class="cart__row__left__items">
+            <div class="cart__row__left__items__item">
+              <img src="images/cart-product-image.png" alt="" class="cart__row__left__items__item__product">
+              <h5 class="heading-5">Milky Lactate Chocolate</h5>
+              <div class="product__page__right__group__counter">
+                <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                <input class="input" type="number" id="number" value="0">
+                <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+              </div>
+              <script>
+                function increaseValue() {
+                  var value = parseInt(document.getElementById('number').value, 10);
+                  value = isNaN(value) ? 0 : value;
+                  value++;
+                  document.getElementById('number').value = value;
+                }
+
+                function decreaseValue() {
+                  var value = parseInt(document.getElementById('number').value, 10);
+                  value = isNaN(value) ? 0 : value;
+                  value < 1 ? value = 1 : '';
+                  value--;
+                  document.getElementById('number').value = value;
+                }
+              </script>
+              <h5 class="paragraph">₦4,500.00</h5>
+              <svg class="cart__row__left__items__item__delete">
+                <use xlink:href="images/sprite.svg#delete" />
+              </svg>
+            </div>
+            <div class="cart__row__left__items__item">
+              <img src="images/cart-product-image.png" alt="" class="cart__row__left__items__item__product">
+              <h5 class="heading-5">Milky Lactate Chocolate</h5>
+              <div class="product__page__right__group__counter">
+                <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                <input class="input" type="number" id="number" value="0">
+                <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+              </div>
+              <script>
+                function increaseValue() {
+                  var value = parseInt(document.getElementById('number').value, 10);
+                  value = isNaN(value) ? 0 : value;
+                  value++;
+                  document.getElementById('number').value = value;
+                }
+
+                function decreaseValue() {
+                  var value = parseInt(document.getElementById('number').value, 10);
+                  value = isNaN(value) ? 0 : value;
+                  value < 1 ? value = 1 : '';
+                  value--;
+                  document.getElementById('number').value = value;
+                }
+              </script>
+              <h5 class="paragraph">₦4,500.00</h5>
+              <svg class="cart__row__left__items__item__delete">
+                <use xlink:href="images/sprite.svg#delete" />
+              </svg>
+            </div>
+            <div class="cart__row__left__items__item">
+              <img src="images/cart-product-image.png" alt="" class="cart__row__left__items__item__product">
+              <h5 class="heading-5">Milky Lactate Chocolate</h5>
+              <div class="product__page__right__group__counter">
+                <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                <input class="input" type="number" id="number" value="0">
+                <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+              </div>
+              <script>
+                function increaseValue() {
+                  var value = parseInt(document.getElementById('number').value, 10);
+                  value = isNaN(value) ? 0 : value;
+                  value++;
+                  document.getElementById('number').value = value;
+                }
+
+                function decreaseValue() {
+                  var value = parseInt(document.getElementById('number').value, 10);
+                  value = isNaN(value) ? 0 : value;
+                  value < 1 ? value = 1 : '';
+                  value--;
+                  document.getElementById('number').value = value;
+                }
+              </script>
+              <h5 class="paragraph">₦4,500.00</h5>
+              <svg class="cart__row__left__items__item__delete">
+                <use xlink:href="images/sprite.svg#delete" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart__row__right">
+          <h3 class="heading-3">
+            Checkout
+          </h3>
+          <p class="paragraph">Complete your purchase by filling the information below</p>
+          <form action="" class="cart__row__right__form">
+            <div class="cart__row__right__form__input-group">
+              <input name="fname" type="text" class="input" placeholder="First Name">
+              <input name="lname" type="text" class="input" placeholder="Last Name">
+            </div>
+            <input name="email" type="email" class="input" placeholder="Email">
+            <input name="phone" type="phone" class="input" placeholder="Phone">
+            <h4 class="heading-4">
+              Shipping Address
+            </h4>
+            <input name="" type="address" class="input" placeholder="Address">
+            <input name="" type="text" class="input" placeholder="">
+            <div class="cart__row__right__form__input-group">
+              <input name="" type="text" class="input" placeholder="">
+              <input name="" type="text" class="input" placeholder="">
+            </div>
+            <textarea name="" id="" cols="30" rows="5" class="textarea" placeholder="Additional Information"></textarea>
+            <h5 class="heading-5">Coupon (Optional)</h5>
+            <input name="" type="text" class="input" placeholder="">
+            <div class="cart__row__right__form__summary">
+              <div class="cart__row__right__form__summary__desc">
+                <p class="paragraph">Subtotal</p>
+                <p class="paragraph">Shipping</p>
+                <p class="paragraph">Discount</p>
+                <h4 class="heading-3">Total</h4>
+              </div>
+              <div class="cart__row__right__form__summary__price">
+                <p class="paragraph">₦14,000.00</p>
+                <p class="paragraph">₦1,500.00</p>
+                <p class="paragraph">- ₦500.00</p>
+                <h3 class="heading-4">₦15,000.00</h3>
+              </div>
+            </div>
+            <button type="submit" class="btn">Pay N15,000.00</button>
+            <div class="cart__row__right__form__secure">
+              <img src="images/padlock.png" alt="padlock">
+              <h5 class="heading-5">
+                Payments are secure and encrypted
+              </h5>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
