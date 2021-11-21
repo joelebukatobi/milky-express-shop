@@ -108,34 +108,28 @@ body {
 
 .heading-1 {
   font-size: 5rem;
-  font-weight: 400;
-  font-family: #eeeeee; }
+  font-weight: 400; }
   @media (min-width: 320px) and (max-width: 576px) {
     .heading-1 {
       font-size: 3.7rem;
       font-weight: 400; } }
 
 .heading-2 {
-  font-size: 3.7rem;
-  font-family: #eeeeee; }
+  font-size: 3.7rem; }
   @media (min-width: 320px) and (max-width: 576px) {
     .heading-2 {
       font-size: 2.8rem; } }
 
 .heading-3 {
-  font-family: #eeeeee;
   font-size: 2.8rem; }
 
 .heading-4 {
-  font-family: #eeeeee;
   font-size: 2.1rem; }
 
 .heading-5 {
-  font-family: #eeeeee;
   font-size: 1.4rem; }
 
 .heading-6 {
-  font-family: #eeeeee;
   font-size: 1.2rem; }
 
 .paragraph {
@@ -274,22 +268,19 @@ li {
       .navbar__mobile__logo__link__img {
         height: 100%; }
   .navbar__nav {
-    width: 20%;
+    width: 25%;
     display: flex;
     justify-content: space-between; }
     .navbar__nav__list {
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center; }
       .navbar__nav__list__group {
-        width: 60%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center; }
+        margin-left: 4.8rem; }
       .navbar__nav__list__item {
         list-style: none;
-        float: left; }
+        margin-left: 2.4rem; }
         .navbar__nav__list__item__link {
           font-size: 1.6rem;
           color: #000000;
@@ -560,6 +551,154 @@ li {
         .cart__row__right__form__secure img {
           border: 2px solid transparent;
           margin-right: 0.8rem; }
+
+.order {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+  .order__page {
+    width: 56rem;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column; }
+    .order__page .input {
+      margin-top: 2.1rem;
+      margin-bottom: 1.7rem;
+      background-color: #ffffff;
+      border: 0.1rem solid #bcbcbc; }
+    .order__page__group {
+      width: 100%;
+      margin-top: 5.6rem; }
+      .order__page__group__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.6rem;
+        margin-bottom: 3.6rem; }
+        .order__page__group__item:hover {
+          border: 0.3rem solid #ffeaf2;
+          border-radius: 2rem;
+          cursor: pointer; }
+        .order__page__group__item__text {
+          width: 65%; }
+          .order__page__group__item__text .heading-4 {
+            font-weight: 500; }
+        .order__page__group__item__arrow {
+          width: 2.3rem;
+          height: 1.8rem; }
+
+.order__two {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+.order__complete {
+  background-color: #f9f9f9;
+  width: 77.5rem;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.3rem 7.5rem 12.1rem 7.5rem;
+  margin-top: 8rem; }
+  .order__complete__logo {
+    margin-bottom: 1.6rem; }
+  .order__complete__status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.2rem; }
+    .order__complete__status__left {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 3.2rem; }
+      .order__complete__status__left > *:not(:last-child) {
+        margin-right: 0.8rem; }
+      .order__complete__status__left > *:last-child {
+        color: #aaaaaa; }
+    .order__complete__status__right .date {
+      color: #aaaaaa; }
+  .order__complete__tab {
+    background-color: #ff1a71;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    color: #ffffff;
+    margin-bottom: 2.4rem; }
+    .order__complete__tab .paragraph {
+      font-weight: 500; }
+  .order__complete__items {
+    width: 100%; }
+    .order__complete__items__item {
+      width: 100%;
+      margin-bottom: 2.4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .order__complete__items__item__right {
+        display: flex;
+        align-items: center; }
+        .order__complete__items__item__right > * {
+          font-weight: 600; }
+          .order__complete__items__item__right > *:not(:last-child) {
+            margin-right: 4rem; }
+      .order__complete__items__item__left > * {
+        font-weight: 600; }
+  .order__complete__summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5.6rem;
+    margin-top: 4rem; }
+    .order__complete__summary__desc {
+      text-align: left; }
+      .order__complete__summary__desc > * {
+        font-weight: 500; }
+        .order__complete__summary__desc > *:not(:last-child) {
+          margin-bottom: 0.8rem; }
+      .order__complete__summary__desc .heading-4 {
+        margin-top: 1.6rem;
+        font-weight: 700; }
+    .order__complete__summary__price {
+      text-align: right; }
+      .order__complete__summary__price > * {
+        font-weight: 500; }
+        .order__complete__summary__price > *:not(:last-child) {
+          margin-bottom: 0.8rem; }
+      .order__complete__summary__price .heading-4 {
+        margin-top: 1.6rem;
+        font-weight: 700; }
+  .order__complete__account {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8.8rem; }
+    .order__complete__account__desc {
+      text-align: left; }
+      .order__complete__account__desc > * {
+        font-weight: 500; }
+        .order__complete__account__desc > *:not(:last-child) {
+          margin-bottom: 0.8rem; }
+    .order__complete__account__price {
+      text-align: right; }
+      .order__complete__account__price > * {
+        font-weight: 500; }
+        .order__complete__account__price > *:not(:last-child) {
+          margin-bottom: 0.8rem; }
+  .order__complete__footer {
+    width: 44.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; }
+    .order__complete__footer__left:hover, .order__complete__footer__right:hover {
+      cursor: pointer; }
+    .order__complete__footer > * {
+      display: flex;
+      align-items: center; }
+      .order__complete__footer > *:not(:last-child) {
+        margin-right: 8rem; }
+      .order__complete__footer > * > *:first-child {
+        margin-right: 0.8rem; }
 
 .product__page {
   width: 100%;
