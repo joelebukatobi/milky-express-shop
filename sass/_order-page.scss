@@ -31,6 +31,9 @@
         }
         &__text {
           width: 65%;
+          & .paragraph {
+            color: $color-grey-five;
+          }
           & .heading-4 {
             font-weight: 500;
           }
