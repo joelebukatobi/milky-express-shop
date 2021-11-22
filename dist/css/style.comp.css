@@ -79,8 +79,7 @@ button:link,
 button:hover,
 button:focus,
 button:active {
-  outline: none;
-  background-color: #ff6300; }
+  outline: none; }
 
 html {
   box-sizing: border-box;
@@ -603,6 +602,8 @@ li {
           cursor: pointer; }
         .order__page__group__item__text {
           width: 65%; }
+          .order__page__group__item__text .paragraph {
+            color: #9a9a9a; }
           .order__page__group__item__text .heading-4 {
             font-weight: 500; }
         .order__page__group__item__arrow {
