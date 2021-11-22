@@ -91,4 +91,22 @@
       }
     }
   }
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    &__page {
+      flex-direction: column;
+      & > * {
+        width: 100%;
+      }
+      &__right {
+        margin-top: 4rem;
+        & > * {
+          margin-bottom: 2.4rem;
+        }
+        & .btn {
+          width: 50%;
+        }
+      }
+    }
+  }
 }

@@ -4,7 +4,9 @@
   width: 100%;
   justify-content: space-between;
   &__dropdown {
+    width: 32rem;
     &__select {
+      width: 100%;
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
@@ -59,7 +61,8 @@
       }
       &__text {
         font-weight: 300;
-        width: 80%;
+        width: 90%;
+        color: $color-grey-six;
       }
       &__img {
         margin-top: 4rem;
@@ -89,8 +92,14 @@
           height: 70%;
         }
 
+        &__title {
+          font-size: 1.6rem;
+          font-weight: 500;
+        }
+
         &__text {
           width: 100%;
+          font-size: 1.4rem;
         }
         &__group {
           margin-top: 2.4rem;

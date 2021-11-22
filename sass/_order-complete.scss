@@ -138,6 +138,9 @@
             margin-bottom: 0.8rem;
           }
         }
+        & .paragraph {
+          color: $color-grey-ten;
+        }
       }
     }
 
@@ -164,6 +167,17 @@
             margin-right: 0.8rem;
           }
         }
+      }
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    flex-direction: column;
+    &__complete {
+      width: 100%;
+      padding: 3.2rem;
+      &__account {
+        margin-bottom: 4rem;
       }
     }
   }

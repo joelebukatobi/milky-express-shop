@@ -27,6 +27,7 @@
   border: none;
   color: $color-grey-dark;
   outline: none;
+  font-weight: 300;
 }
 
 .input {
@@ -38,10 +39,12 @@
   font-family: $font-primary;
   font-size: 1.6rem;
   font-weight: 500;
+  font-weight: 300;
   &::-webkit-input-placeholder {
     font-family: $font-primary;
     font-size: 1.6rem;
     color: $color-grey-dark;
+    font-weight: 300;
   }
   &::-moz-placeholder {
     font-family: $font-primary;
