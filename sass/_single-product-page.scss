@@ -7,19 +7,27 @@
     &__right {
       width: 45%;
       & .heading-3 {
-        font-weight: 400;
+        font-weight: 600;
       }
 
       & .heading-2 {
         font-weight: 600;
       }
+      & .paragraph {
+        color: $color-grey-twelve;
+      }
       & > * {
         margin-bottom: 4rem;
       }
-      & .btn {
+      & .select {
         background-color: $color-white;
         border: 0.25rem solid $color-primary;
         color: $color-primary;
+        font-weight: 500;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding-right: 1.6rem;
       }
 
       &__group {
@@ -99,6 +107,30 @@
         width: 100%;
       }
       &__right {
+        margin-top: 4rem;
+        & > * {
+          margin-bottom: 2.4rem;
+        }
+        & .btn {
+          width: 50%;
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    padding-left: 6.4rem;
+    padding-right: 6.4rem;
+    &__page {
+      // flex-direction: col
+      & > * {
+        width: 100%;
+      }
+      width: 100%;
+      &__left {
+        width: 50%;
+      }
+      &__right {
+        width: 45%;
         margin-top: 4rem;
         & > * {
           margin-bottom: 2.4rem;

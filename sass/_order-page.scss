@@ -8,7 +8,9 @@
     margin-top: 8rem;
     display: flex;
     flex-direction: column;
-
+    & .paragraph {
+      color: $color-grey-five;
+    }
     & .input {
       margin-top: 2.1rem;
       margin-bottom: 1.7rem;
@@ -56,6 +58,16 @@
           margin-bottom: 1.6rem;
         }
       }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    padding-right: 6.4rem;
+    padding-left: 6.4rem;
+    flex-direction: column;
+    &__page {
+      flex-direction: column;
+      width: 100%;
     }
   }
 }

@@ -70,7 +70,7 @@
 
 .textarea {
   background-color: $color-white;
-  border-radius: 0.3rem;
+  border-radius: 1rem;
   border: none;
   padding-top: 1.6rem;
   padding-left: 1.6rem;
@@ -79,23 +79,19 @@
   resize: none;
   &::-webkit-input-placeholder {
     font-size: 1.6rem;
-    // color: $color-grey;
   }
   &::-moz-placeholder {
     font-size: 1.6rem;
-    // color: $color-grey;
   }
   &:-ms-input-placeholder {
     font-size: 1.6rem;
-    // color: $color-grey;
   }
   &::-ms-input-placeholder {
     font-size: 1.6rem;
-    // color: $color-grey;
   }
   &::placeholder {
     font-size: 1.6rem;
-    // color: $color-grey;
+    color: $color-grey-dark;
   }
 }
 
@@ -109,8 +105,11 @@
 }
 
 .container {
-  @media all and (min-width: 1024px) and (max-width: 1440px) {
-    padding: 0 8rem;
+  @media all and (min-width: 1024px) and (max-width: 1366px) {
+    padding: 0 16rem;
+  }
+  @media all and (min-width: 1366px) and (max-width: 1440px) {
+    padding: 0 28rem;
   }
   @media all and (min-width: 1440px) and (max-width: 1920px) {
     padding: 0 16rem;
@@ -136,7 +135,8 @@
 
 .container-shelf {
   background-color: $color-grey-sixteen;
-  padding: 10.4rem 0 14rem 0;
+  padding-top: 10.4rem;
+  padding-bottom: 14rem;
   & .shelf {
     margin-bottom: 0;
   }

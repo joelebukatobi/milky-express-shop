@@ -3,7 +3,7 @@
   ---------------
 */
 $color-primary: #ff1a71;
-$color-secondary: #ff6300;
+$color-secondary: #c80750;
 $color-tertiary: #b806cc;
 $color-base: #eeeeee;
 $color-tertiary-dark: #45024c;
@@ -119,11 +119,20 @@ textarea::placeholder {
   font-size: 1.6rem;
 }
 
+textarea:link,
+textarea:hover,
+textarea:focus,
+textarea:active {
+  outline: none;
+  // background-color: $color-white;
+}
+
 button:link,
 button:hover,
 button:focus,
 button:active {
   outline: none;
+  background-color: $color-secondary;
 }
 
 html {
