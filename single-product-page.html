@@ -31,15 +31,17 @@
               GO HOME
             </a>
           </li>
-          <div class="navbar__nav__list__group">
-            <img src="images/cart-icon.png" alt="" class="navbar__nav__group__list__item__icon">
-          </div>
-
+          <a href="cart-checkout.html" class="">
+            <div class="navbar__nav__list__group">
+              <img src="images/cart-icon.png" alt="" class="navbar__nav__group__list__item__icon">
+            </div>
+          </a>
           <li class="navbar__nav__list__item">
-            <a class="navbar__nav__list__item__link" href="about.html">
+            <a class="navbar__nav__list__item__link" href="cart-checkout.html">
               <strong>Cart</strong>
             </a>
-            <p class="paragraph"><span>3&nbsp</span>Items</p>
+            <br>
+            <a href="cart-checkout.html" class="paragraph"><span>3&nbsp</span>Items</a>
           </li>
         </ul>
       </nav>
@@ -79,9 +81,14 @@
           <p class="paragraph">
             Imagine being a mother who works every morning and still having to take care of the baby. Our lactation cookies are specially made for you. Available in 2 flavors, you can have more than one kind of cookie because it’s so yummy. You might eat it too fast because it tastes so good
           </p>
-          <button class="btn">Chose a flavour ></button>
+          <!-- <button class="btn"></button> -->
+          <select name="" id="" class="select">
+            <option value="">Chose a flavour &nbsp></option>
+            <option value="">Option 1</option>
+            <option value="">Option 2</option>
+          </select>
           <div class="product__page__right__group">
-            <button class="btn">Add to cart</button>
+            <button class="btn"><a href="cart-checkout.html">Add to cart</a></button>
             <form class="product__page__right__group__counter">
               <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
               <input class="input" type="number" id="number" value="0">
@@ -150,7 +157,8 @@
             production of breastmilk</h6>
           <div class="shelf__row__item__group">
             <p class="paragraph">3,000 NGN</p>
-            <button class="btn">Add to cart</button>
+            <button class="btn"><a href="cart-checkout.html">Add to cart</a>
+              < </button>
           </div>
         </div>
       </div>

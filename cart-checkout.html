@@ -8,6 +8,8 @@
   <title>Milky Express Shop </title>
 </head>
 
+<script src="js/countries.js"></script>
+
 <body>
 
 
@@ -32,15 +34,17 @@
               GO HOME
             </a>
           </li>
-          <div class="navbar__nav__list__group">
-            <img src="images/cart-icon.png" alt="" class="navbar__nav__group__list__item__icon">
-          </div>
-
+          <a href="cart-checkout.html" class="">
+            <div class="navbar__nav__list__group">
+              <img src="images/cart-icon.png" alt="" class="navbar__nav__group__list__item__icon">
+            </div>
+          </a>
           <li class="navbar__nav__list__item">
-            <a class="navbar__nav__list__item__link" href="about.html">
+            <a class="navbar__nav__list__item__link" href="cart-checkout.html">
               <strong>Cart</strong>
             </a>
-            <p class="paragraph"><span>3&nbsp</span>Items</p>
+            <br>
+            <a href="cart-checkout.html" class="paragraph"><span>3&nbsp</span>Items</a>
           </li>
         </ul>
       </nav>
@@ -51,9 +55,10 @@
   <div class="container">
     <div class="cart">
       <div class="cart__top">
-        <p class="paragraph">
-          < &nbsp;&nbsp; Continue Shopping </p>
-            <!-- <hr class="separator"> -->
+        <p class="paragraph"><a href="">
+            < &nbsp;&nbsp; Continue Shopping</a>
+        </p>
+        <!-- <hr class="separator"> -->
       </div>
       <div class="cart__row">
 
@@ -167,11 +172,17 @@
               Shipping Address
             </h4>
             <input name="" type="address" class="input" placeholder="Address">
-            <input name="" type="text" class="input" placeholder="">
+            <select name="" id="country" name="country" class="select"></select>
             <div class="cart__row__right__form__input-group">
-              <input name="" type="text" class="input" placeholder="">
-              <input name="" type="text" class="input" placeholder="">
+              <select name="state" id="state" class="select" placeholder="State">
+                <option value="">State</option>
+              </select>
+              <input name="" type="text" class="input" placeholder="City">
             </div>
+            <script language="javascript">
+              populateCountries("country", "state");
+            </script>;
+
             <textarea name="" id="" cols="30" rows="5" class="textarea" placeholder="Additional Information"></textarea>
             <h5 class="heading-5">Coupon (Optional)</h5>
             <input name="" type="text" class="input" placeholder="">
@@ -189,7 +200,7 @@
                 <h3 class="heading-4">₦15,000.00</h3>
               </div>
             </div>
-            <button type="submit" class="btn">Pay N15,000.00</button>
+            <button type="submit" class="btn"><a href="cart-checkout.html">Pay ₦15,000.00</a></button>
             <div class="cart__row__right__form__secure">
               <img src="images/padlock.png" alt="padlock">
               <h5 class="heading-5">
@@ -201,6 +212,7 @@
       </div>
     </div>
   </div>
+
 
 </body>
 
