@@ -20,17 +20,18 @@
     &__group {
       width: 100%;
       margin-top: 5.6rem;
+      & .active {
+        border: 0.3rem solid $color-grey-sixteen;
+        border-radius: 2rem;
+        cursor: pointer;
+      }
       &__item {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 1.6rem;
         margin-bottom: 3.6rem;
-        &:hover {
-          border: 0.3rem solid $color-grey-sixteen;
-          border-radius: 2rem;
-          cursor: pointer;
-        }
+
         &__text {
           width: 65%;
           & .paragraph {
